@@ -23,7 +23,6 @@ class TestApp:
                 'username': 'ash',
                 'password': 'pikachu',
             })
-
             assert(response.json['username'] == 'ash')
             assert(User.query.filter(User.username == 'ash').first())
 
